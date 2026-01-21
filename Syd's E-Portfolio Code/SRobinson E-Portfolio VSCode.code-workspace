@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../FrontEnd Simplified/Flex"
+		},
+		{
+			"path": "../../../Desktop/Frontend Simplified/2.1 Build Your Website/HTML Tutorial Build Website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML Tutorial Build Website"
+	}
+}
