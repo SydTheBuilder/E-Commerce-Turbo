@@ -324,3 +324,23 @@ FEATURES
     color: #bfbfbf;
     margin-right: 8px;
 }
+
+/*
+
+RECENT
+
+*/
+
+#recent {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.books--recent {
+    flex-wrap: wrap;
+}
+
+.books--recent .book {
+    width: calc(25% - 18px);
+    margin-bottom: 40px;
+}
