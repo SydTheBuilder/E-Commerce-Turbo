@@ -458,7 +458,7 @@ RESPONSIVE
 }
 
 .menu__backdrop {
-    position: absolute;
+    position: fixed;
     background-color: #242424;
     top: 0;
     right: 0;
@@ -468,9 +468,13 @@ RESPONSIVE
     display: flex;
     justify-content: center;
     align-items: center;
-    visibility: hidden;
+    transition: all 300ms ease;
     opacity: 0;
-    transition: opacity 300ms ease, visibility 300ms ease;
+    visibility: hidden;
+}
+
+body.menu--open {
+    overflow: hidden;
 }
 
 body.menu--open .menu__backdrop {
