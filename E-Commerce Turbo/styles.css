@@ -146,6 +146,11 @@ button:active{
   transition: transform 100ms ease, box-shadow 100ms ease;
 }
 
+.btn:hover {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #4e2d99;
+}
+
 .explore__btn .btn:hover {
   transform: translateY(3px);
   box-shadow: 0 1px 0 #4e2d99;
@@ -432,4 +437,103 @@ footer {
 .footer__copyright {
     color: #aaaaaa;
     font-size: 14px;
+}
+
+/*
+
+RESPONSIVE
+
+*/
+
+/* Tablet */
+@media (max-width: 768px) {
+    .row {
+        padding: 0 24px;
+    }
+
+    .header__description h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .header__description h2 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .section__title {
+        padding: 40px 0;
+    }
+
+    .highlight__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight {
+        width: 100%;
+        max-width: 400px;
+        padding: 16px 0;
+    }
+
+    .books {
+        flex-wrap: wrap;
+    }
+
+    .book {
+        width: calc(50% - 12px);
+    }
+
+    .books--recent .book {
+        width: calc(50% - 12px);
+    }
+
+    .footer__links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .nav__links {
+        gap: 8px;
+    }
+
+    .nav__link {
+        font-size: 14px;
+        margin-left: 4px;
+        padding: 4px 6px;
+    }
+
+    .header__description h1 {
+        font-size: 26px;
+    }
+
+    .header__description h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .book {
+        width: 100%;
+    }
+
+    .books--recent .book {
+        width: 100%;
+    }
+
+    .section__title {
+        font-size: 22px;
+        padding: 32px 0;
+    }
+
+    .footer__links {
+        gap: 12px;
+    }
 }
