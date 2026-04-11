@@ -7,6 +7,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="./styles.css"> 
     <script src="https://kit.fontawesome.com/b0e7c1b877.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
 <section id="landing">
@@ -325,17 +326,4 @@
     </div>
 </footer>
 
-<script>
-    const btnMenu = document.getElementById('btn__menu');
-    const backdrop = document.getElementById('menu__backdrop');
-    const closeBtn = document.getElementById('menu__backdrop--close');
-
-    btnMenu.addEventListener('click', function() {
-        backdrop.classList.add('menu__backdrop--open');
-    });
-
-    closeBtn.addEventListener('click', function() {
-        backdrop.classList.remove('menu__backdrop--open');
-    });
-</script>
 </body>
