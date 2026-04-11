@@ -473,7 +473,7 @@ RESPONSIVE
     transition: opacity 300ms ease, visibility 300ms ease;
 }
 
-.menu__backdrop--open {
+body.menu--open .menu__backdrop {
     visibility: visible;
     opacity: 1;
 }

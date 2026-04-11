@@ -1,11 +1,10 @@
-const btnMenu = document.getElementById('btn__menu');
-const backdrop = document.getElementById('menu__backdrop');
-const closeBtn = document.getElementById('menu__backdrop--close');
+function openMenu() {
+    document.body.classList.add('menu--open');
+}
 
-btnMenu.addEventListener('click', function() {
-    backdrop.classList.add('menu__backdrop--open');
-});
+function closeMenu() {
+    document.body.classList.remove('menu--open');
+}
 
-closeBtn.addEventListener('click', function() {
-    backdrop.classList.remove('menu__backdrop--open');
-});
+document.getElementById('btn__menu').addEventListener('click', openMenu);
+document.getElementById('menu__backdrop--close').addEventListener('click', closeMenu);
