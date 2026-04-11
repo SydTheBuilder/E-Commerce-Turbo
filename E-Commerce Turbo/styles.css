@@ -142,6 +142,13 @@ button:active{
   font-size: 20px;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0 4px 0 #4e2d99;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.explore__btn .btn:hover {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #4e2d99;
 }
 .header__img--wrapper {
     padding: 20px;
