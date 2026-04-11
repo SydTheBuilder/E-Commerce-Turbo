@@ -13,18 +13,23 @@
 <nav>
     <div class ="nav__container">
         <img class="logo" src="assets/Library.svg" alt="Library Logo">
-        <ul class="nav__links" id="nav__links">
+        <ul class="nav__links">
             <li><a href="#" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
         </ul>
-        <button class="nav__burger" id="nav__burger" aria-label="Toggle navigation">
-            <span class="burger__bar"></span>
-            <span class="burger__bar"></span>
-            <span class="burger__bar"></span>
-        </button>
+        <button class="btn__menu" id="btn__menu">&#9776;</button>
     </div>
 </nav>
+
+<div class="menu__backdrop" id="menu__backdrop">
+    <button class="menu__backdrop--close" id="menu__backdrop--close">&times;</button>
+    <ul class="menu__links">
+        <li><a href="#" class="menu__link">Home</a></li>
+        <li><a href="#" class="menu__link">Contact</a></li>
+        <li><a href="#" class="menu__link menu__link--primary">Books</a></li>
+    </ul>
+</div>
     <header>
 <div class="header__container">
   <div class="header__description">
@@ -321,11 +326,16 @@
 </footer>
 
 <script>
-    const burger = document.getElementById('nav__burger');
-    const navLinks = document.getElementById('nav__links');
-    burger.addEventListener('click', function() {
-        navLinks.classList.toggle('nav__links--open');
-        burger.classList.toggle('nav__burger--open');
+    const btnMenu = document.getElementById('btn__menu');
+    const backdrop = document.getElementById('menu__backdrop');
+    const closeBtn = document.getElementById('menu__backdrop--close');
+
+    btnMenu.addEventListener('click', function() {
+        backdrop.classList.add('menu__backdrop--open');
+    });
+
+    closeBtn.addEventListener('click', function() {
+        backdrop.classList.remove('menu__backdrop--open');
     });
 </script>
 </body>
