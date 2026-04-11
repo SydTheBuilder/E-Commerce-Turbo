@@ -12,14 +12,19 @@
 <section id="landing">
 <nav>
     <div class ="nav__container">
-<img class="logo" src="assets/Library.svg". alt="Library Logo">
-<ul class="nav__links">
-    
-    <li><a href="#" class="nav__link">Home</a></li>
-    <li><a href="#" class="nav__link">Contact</a></li>
-    <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
-</ul>
-    </nav>
+        <img class="logo" src="assets/Library.svg" alt="Library Logo">
+        <ul class="nav__links" id="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
+        </ul>
+        <button class="nav__burger" id="nav__burger" aria-label="Toggle navigation">
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
+            <span class="burger__bar"></span>
+        </button>
+    </div>
+</nav>
     <header>
 <div class="header__container">
   <div class="header__description">
@@ -315,4 +320,12 @@
     </div>
 </footer>
 
+<script>
+    const burger = document.getElementById('nav__burger');
+    const navLinks = document.getElementById('nav__links');
+    burger.addEventListener('click', function() {
+        navLinks.classList.toggle('nav__links--open');
+        burger.classList.toggle('nav__burger--open');
+    });
+</script>
 </body>
