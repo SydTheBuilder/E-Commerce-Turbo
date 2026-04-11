@@ -152,8 +152,8 @@ button:active{
 }
 
 .header__img--wrapper img {
-    max-width: 80%;
-    max-height: 40vh;
+    max-width: 92%;
+    max-height: 46vh;
 }
 .container{
 padding: 4px 0;
@@ -354,4 +354,75 @@ RECENT
 .books--recent .book {
     width: calc(25% - 18px);
     margin-bottom: 40px;
+}
+
+/*
+
+EXPLORE
+
+*/
+
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+    padding: 60px 0;
+}
+
+.explore__btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #1c1c1c;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer__logo img {
+    width: 120px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__logo figcaption {
+    color: #aaaaaa;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    color: #aaaaaa;
+    font-size: 14px;
 }
