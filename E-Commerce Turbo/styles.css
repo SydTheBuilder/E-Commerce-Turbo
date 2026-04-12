@@ -560,6 +560,10 @@ body.menu--open .menu__backdrop {
         padding: 16px 0;
     }
 
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
     .books {
         flex-wrap: wrap;
     }
